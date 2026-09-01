@@ -1,0 +1,38 @@
+name: Deploy Catering Preview
+
+on:
+  push:
+    branches:
+      - cursor/hk-catering-html-prototype-ce8a
+      - gh-pages
+    paths:
+      - 'catering-site/**'
+      - '.github/workflows/deploy-catering-preview.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: catering-preview
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: catering-site
+
+      - uses: actions/deploy-pages@v4
+        id: deployment
