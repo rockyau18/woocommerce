@@ -16,10 +16,7 @@ Then visit: http://localhost:8080
 ## Pages
 
 - `index.html` — Homepage with all sections
-- `menu.html` — Menu showcase with filterable categories
-- `about.html` — Company story and team introduction
-- `blog.html` — Event case studies and blog posts
-- `services/bar-service.html` — Bar & beverage service page
+- `services/bar-service.html` — Bar & beverage service page (like 24carrots reference)
 
 ## Features
 

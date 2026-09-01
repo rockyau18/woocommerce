@@ -9,8 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preload" as="image" href="assets/images/hero.webp" type="image/webp">
-  <link rel="stylesheet" href="css/performance.css">
 </head>
 <body>
 
@@ -21,9 +19,8 @@
       <nav class="nav-desktop">
         <a href="#home" data-i18n="nav.home">Home</a>
         <a href="#services" data-i18n="nav.services">Services</a>
-        <a href="menu.html" data-i18n="nav.menu">Menu</a>
-        <a href="about.html" data-i18n="nav.about">About</a>
-        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="header-actions">
@@ -43,16 +40,15 @@
   <nav class="mobile-nav">
     <a href="#home" data-i18n="nav.home">Home</a>
     <a href="#services" data-i18n="nav.services">Services</a>
-    <a href="menu.html" data-i18n="nav.menu">Menu</a>
-    <a href="about.html" data-i18n="nav.about">About</a>
-    <a href="blog.html" data-i18n="nav.blog">Blog</a>
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
     <a href="#contact" data-i18n="nav.contact">Contact</a>
   </nav>
 
   <!-- Hero -->
   <section id="home" class="hero">
     <div class="hero-bg">
-      <picture><source srcset="assets/images/hero.webp" type="image/webp"><img src="assets/images/hero.jpg" alt="Large group dining event catered by Lumina" loading="eager" fetchpriority="high"></picture>
+      <img src="assets/images/hero-bar.jpg" alt="Premium bar and catering service in Hong Kong">
     </div>
     <div class="hero-content">
       <p class="eyebrow" data-i18n="hero.eyebrow">Premium Catering · Hong Kong</p>
@@ -94,7 +90,7 @@
     <div class="container">
       <div class="about-grid reveal">
         <div class="about-image">
-          <picture><source srcset="assets/images/spread.webp" type="image/webp"><img src="assets/images/spread.jpg" alt="Elegant event table setup and catering" loading="lazy" decoding="async"></picture>
+          <img src="assets/images/corporate-catering.jpg" alt="Corporate catering event in Hong Kong">
         </div>
         <div>
           <div class="section-header">
@@ -141,7 +137,7 @@
       <div class="services-grid">
         <article class="service-card featured reveal">
           <div class="service-card-image">
-            <picture><source srcset="assets/images/corporate-event.webp" type="image/webp"><img src="assets/images/corporate-event.jpg" alt="Corporate event catering" loading="lazy" decoding="async"></picture>
+            <img src="assets/images/corporate-catering.jpg" alt="Corporate event catering">
           </div>
           <div class="service-card-body">
             <h3 data-i18n="services.corporate.title">Corporate Events</h3>
@@ -151,7 +147,7 @@
         </article>
         <article class="service-card reveal">
           <div class="service-card-image">
-            <picture><source srcset="assets/images/wedding.webp" type="image/webp"><img src="assets/images/wedding.jpg" alt="Wedding reception catering" loading="lazy" decoding="async"></picture>
+            <img src="assets/images/wedding-catering.jpg" alt="Wedding catering">
           </div>
           <div class="service-card-body">
             <h3 data-i18n="services.wedding.title">Weddings</h3>
@@ -161,7 +157,7 @@
         </article>
         <article class="service-card reveal">
           <div class="service-card-image">
-            <picture><source srcset="assets/images/steak.webp" type="image/webp"><img src="assets/images/steak.jpg" alt="Outdoor festival and private event catering" loading="lazy" decoding="async"></picture>
+            <img src="assets/images/private-events.jpg" alt="Private celebration catering">
           </div>
           <div class="service-card-body">
             <h3 data-i18n="services.private.title">Private Celebrations</h3>
@@ -171,7 +167,7 @@
         </article>
         <article class="service-card reveal">
           <div class="service-card-image">
-            <picture><source srcset="assets/images/canapes.webp" type="image/webp"><img src="assets/images/canapes.jpg" alt="Cocktail reception catering" loading="lazy" decoding="async"></picture>
+            <img src="assets/images/bar-service.jpg" alt="Bar and beverage service">
           </div>
           <div class="service-card-body">
             <h3 data-i18n="services.bar.title">Bar & Beverage</h3>
@@ -181,7 +177,7 @@
         </article>
         <article class="service-card reveal">
           <div class="service-card-image">
-            <picture><source srcset="assets/images/buffet.webp" type="image/webp"><img src="assets/images/buffet.jpg" alt="Full-service buffet catering" loading="lazy" decoding="async"></picture>
+            <img src="assets/images/hero-bar.jpg" alt="Full service catering">
           </div>
           <div class="service-card-body">
             <h3 data-i18n="services.full.title">Full-Service Catering</h3>
@@ -265,11 +261,11 @@
         <h2 data-i18n="gallery.title">Moments We've Created</h2>
       </div>
       <div class="gallery-grid reveal">
-        <div class="gallery-item"><picture><source srcset="assets/images/hero.webp" type="image/webp"><img src="assets/images/hero.jpg" alt="Banquet event catering" loading="lazy" decoding="async"></picture></div>
-        <div class="gallery-item"><picture><source srcset="assets/images/corporate-event.webp" type="image/webp"><img src="assets/images/corporate-event.jpg" alt="Corporate conference catering" loading="lazy" decoding="async"></picture></div>
-        <div class="gallery-item"><picture><source srcset="assets/images/canapes.webp" type="image/webp"><img src="assets/images/canapes.jpg" alt="Cocktail reception" loading="lazy" decoding="async"></picture></div>
-        <div class="gallery-item"><picture><source srcset="assets/images/rooftop-event.webp" type="image/webp"><img src="assets/images/rooftop-event.jpg" alt="Rooftop event venue" loading="lazy" decoding="async"></picture></div>
-        <div class="gallery-item"><picture><source srcset="assets/images/garden-party.webp" type="image/webp"><img src="assets/images/garden-party.jpg" alt="Garden party catering" loading="lazy" decoding="async"></picture></div>
+        <div class="gallery-item"><img src="assets/images/wedding-catering.jpg" alt="Wedding catering"></div>
+        <div class="gallery-item"><img src="assets/images/bar-service.jpg" alt="Bar service"></div>
+        <div class="gallery-item"><img src="assets/images/private-events.jpg" alt="Private event"></div>
+        <div class="gallery-item"><img src="assets/images/corporate-catering.jpg" alt="Corporate gala"></div>
+        <div class="gallery-item"><img src="assets/images/hero-bar.jpg" alt="Cocktail reception"></div>
       </div>
     </div>
   </section>
@@ -427,13 +423,14 @@
         <div class="footer-col">
           <h4 data-i18n="footer.services">Services</h4>
           <a href="#services" data-i18n="services.corporate.title">Corporate Events</a>
-          <a href="menu.html" data-i18n="footer.menu">Our Menu</a>
+          <a href="#services" data-i18n="services.wedding.title">Weddings</a>
+          <a href="#services" data-i18n="services.private.title">Private Celebrations</a>
           <a href="services/bar-service.html" data-i18n="services.bar.title">Bar & Beverage</a>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer.company">Company</h4>
-          <a href="about.html" data-i18n="footer.about">About Us</a>
-          <a href="blog.html" data-i18n="footer.blog">Blog & Cases</a>
+          <a href="#about" data-i18n="footer.about">About Us</a>
+          <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
           <a href="#contact" data-i18n="nav.contact">Contact</a>
           <a href="#" data-i18n="footer.careers">Careers</a>
         </div>
