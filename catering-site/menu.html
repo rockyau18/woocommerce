@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/performance.css">
 </head>
 <body>
 
@@ -45,7 +46,7 @@
 
   <section class="page-hero">
     <div class="page-hero-bg">
-      <img src="assets/images/food-dimsum-canapes.jpg" alt="Gourmet catering menu Hong Kong">
+      <picture><source srcset="assets/images/spread.webp" type="image/webp"><img src="assets/images/spread.jpg" alt="Gourmet catering spread" loading="lazy" decoding="async"></picture>
     </div>
     <div class="container page-hero-content">
       <p class="breadcrumb"><a href="index.html" data-i18n="nav.home">Home</a> / <span data-i18n="menu.breadcrumb">Our Menu</span></p>
@@ -59,11 +60,11 @@
   <section class="section" style="padding-bottom: 2rem;">
     <div class="container">
       <div class="food-showcase reveal">
-        <div class="food-showcase-item"><img src="assets/images/food-wedding-banquet.jpg" alt="Wedding banquet dishes"></div>
-        <div class="food-showcase-item"><img src="assets/images/food-seafood.jpg" alt="Fresh seafood platter"></div>
-        <div class="food-showcase-item"><img src="assets/images/food-desserts.jpg" alt="Dessert selection"></div>
-        <div class="food-showcase-item"><img src="assets/images/food-cocktail-canapes.jpg" alt="Cocktail canapés"></div>
-        <div class="food-showcase-item"><img src="assets/images/food-corporate-buffet.jpg" alt="Corporate buffet"></div>
+        <div class="food-showcase-item"><picture><source srcset="assets/images/wedding.webp" type="image/webp"><img src="assets/images/wedding.jpg" alt="Wedding reception catering" loading="lazy" decoding="async"></picture></div>
+        <div class="food-showcase-item"><picture><source srcset="assets/images/seafood.webp" type="image/webp"><img src="assets/images/seafood.jpg" alt="Fresh seafood dish" loading="lazy" decoding="async"></picture></div>
+        <div class="food-showcase-item"><picture><source srcset="assets/images/desserts.webp" type="image/webp"><img src="assets/images/desserts.jpg" alt="Dessert selection" loading="lazy" decoding="async"></picture></div>
+        <div class="food-showcase-item"><picture><source srcset="assets/images/cocktails.webp" type="image/webp"><img src="assets/images/cocktails.jpg" alt="Cocktail and canapé service" loading="lazy" decoding="async"></picture></div>
+        <div class="food-showcase-item"><picture><source srcset="assets/images/buffet.webp" type="image/webp"><img src="assets/images/buffet.jpg" alt="Full-service buffet catering" loading="lazy" decoding="async"></picture></div>
       </div>
     </div>
   </section>
@@ -74,7 +75,7 @@
       <div class="menu-tabs reveal">
         <button class="menu-tab active" data-category="all" data-i18n="menu.tab.all">All</button>
         <button class="menu-tab" data-category="canapes" data-i18n="menu.tab.canapes">Canapés & Starters</button>
-        <button class="menu-tab" data-category="chinese" data-i18n="menu.tab.chinese">Chinese Banquet</button>
+        <button class="menu-tab" data-category="specials" data-i18n="menu.tab.chinese">Chef's Specials</button>
         <button class="menu-tab" data-category="western" data-i18n="menu.tab.western">Western Mains</button>
         <button class="menu-tab" data-category="desserts" data-i18n="menu.tab.desserts">Desserts</button>
         <button class="menu-tab" data-category="beverages" data-i18n="menu.tab.beverages">Beverages</button>
@@ -83,63 +84,63 @@
       <div class="menu-category active" data-category="all">
         <div class="menu-grid">
           <article class="menu-item reveal" data-cat="canapes">
-            <div class="menu-item-image"><img src="assets/images/food-dimsum-canapes.jpg" alt="Har Gow and Siu Mai"></div>
+            <div class="menu-item-image"><picture><source srcset="assets/images/canapes.webp" type="image/webp"><img src="assets/images/canapes.jpg" alt="Truffle arancini" loading="lazy" decoding="async"></picture></div>
             <div class="menu-item-body">
               <span class="menu-item-tag" data-i18n="menu.item1.tag">Signature</span>
-              <h3 data-i18n="menu.item1.title">Har Gow & Siu Mai Trio</h3>
-              <p data-i18n="menu.item1.desc">Hand-crafted crystal shrimp dumplings and pork siu mai.</p>
+              <h3 data-i18n="menu.item1.title">Truffle Arancini</h3>
+              <p data-i18n="menu.item1.desc">Crispy risotto balls with black truffle and parmesan.</p>
             </div>
           </article>
           <article class="menu-item reveal" data-cat="canapes">
-            <div class="menu-item-image"><img src="assets/images/food-cocktail-canapes.jpg" alt="Char siu bao sliders"></div>
+            <div class="menu-item-image"><picture><source srcset="assets/images/plated.webp" type="image/webp"><img src="assets/images/plated.jpg" alt="Beef tartare crostini" loading="lazy" decoding="async"></picture></div>
             <div class="menu-item-body">
-              <span class="menu-item-tag" data-i18n="menu.item2.tag">Fusion</span>
-              <h3 data-i18n="menu.item2.title">Mini Char Siu Bao Sliders</h3>
-              <p data-i18n="menu.item2.desc">Fluffy bao buns filled with honey-glazed char siu.</p>
+              <span class="menu-item-tag" data-i18n="menu.item2.tag">Starter</span>
+              <h3 data-i18n="menu.item2.title">Beef Tartare Crostini</h3>
+              <p data-i18n="menu.item2.desc">Hand-cut wagyu tartare on toasted sourdough.</p>
             </div>
           </article>
           <article class="menu-item reveal" data-cat="canapes">
-            <div class="menu-item-image"><img src="assets/images/food-seafood.jpg" alt="Smoked salmon blinis"></div>
+            <div class="menu-item-image"><picture><source srcset="assets/images/seafood.webp" type="image/webp"><img src="assets/images/seafood.jpg" alt="Fresh seafood dish" loading="lazy" decoding="async"></picture></div>
             <div class="menu-item-body">
               <span class="menu-item-tag" data-i18n="menu.item3.tag">Western</span>
               <h3 data-i18n="menu.item3.title">Smoked Salmon Blinis</h3>
               <p data-i18n="menu.item3.desc">Scottish smoked salmon on buckwheat blinis.</p>
             </div>
           </article>
-          <article class="menu-item reveal" data-cat="chinese">
-            <div class="menu-item-image"><img src="assets/images/food-wedding-banquet.jpg" alt="Braised abalone"></div>
+          <article class="menu-item reveal" data-cat="specials">
+            <div class="menu-item-image"><picture><source srcset="assets/images/seafood.webp" type="image/webp"><img src="assets/images/seafood.jpg" alt="Seared scallops" loading="lazy" decoding="async"></picture></div>
             <div class="menu-item-body">
-              <span class="menu-item-tag" data-i18n="menu.item4.tag">Banquet</span>
-              <h3 data-i18n="menu.item4.title">Braised Abalone & Sea Cucumber</h3>
-              <p data-i18n="menu.item4.desc">Premium South African abalone slow-braised in oyster sauce.</p>
+              <span class="menu-item-tag" data-i18n="menu.item4.tag">Special</span>
+              <h3 data-i18n="menu.item4.title">Seared Scallops</h3>
+              <p data-i18n="menu.item4.desc">Hokkaido scallops with pea purée and lemon butter.</p>
             </div>
           </article>
-          <article class="menu-item reveal" data-cat="chinese">
-            <div class="menu-item-image"><img src="assets/images/food-wedding-banquet.jpg" alt="Roast suckling pig"></div>
+          <article class="menu-item reveal" data-cat="specials">
+            <div class="menu-item-image"><picture><source srcset="assets/images/steak.webp" type="image/webp"><img src="assets/images/steak.jpg" alt="Herb-crusted lamb rack" loading="lazy" decoding="async"></picture></div>
             <div class="menu-item-body">
-              <span class="menu-item-tag" data-i18n="menu.item5.tag">Banquet</span>
-              <h3 data-i18n="menu.item5.title">Crispy Roast Suckling Pig</h3>
-              <p data-i18n="menu.item5.desc">Whole roasted suckling pig with crackling skin.</p>
+              <span class="menu-item-tag" data-i18n="menu.item5.tag">Special</span>
+              <h3 data-i18n="menu.item5.title">Herb-Crusted Lamb Rack</h3>
+              <p data-i18n="menu.item5.desc">Australian lamb with rosemary jus and fondant potato.</p>
             </div>
           </article>
-          <article class="menu-item reveal" data-cat="chinese">
-            <div class="menu-item-image"><img src="assets/images/food-seafood.jpg" alt="Lobster noodles"></div>
+          <article class="menu-item reveal" data-cat="specials">
+            <div class="menu-item-image"><picture><source srcset="assets/images/plated.webp" type="image/webp"><img src="assets/images/plated.jpg" alt="Lobster risotto" loading="lazy" decoding="async"></picture></div>
             <div class="menu-item-body">
-              <span class="menu-item-tag" data-i18n="menu.item6.tag">Banquet</span>
-              <h3 data-i18n="menu.item6.title">Lobster Noodles in Superior Broth</h3>
-              <p data-i18n="menu.item6.desc">Fresh Boston lobster wok-fried with egg noodles.</p>
+              <span class="menu-item-tag" data-i18n="menu.item6.tag">Special</span>
+              <h3 data-i18n="menu.item6.title">Lobster Risotto</h3>
+              <p data-i18n="menu.item6.desc">Creamy arborio rice with fresh lobster tail and saffron.</p>
             </div>
           </article>
           <article class="menu-item reveal" data-cat="western">
-            <div class="menu-item-image"><img src="assets/images/food-corporate-buffet.jpg" alt="Wagyu beef"></div>
+            <div class="menu-item-image"><picture><source srcset="assets/images/steak.webp" type="image/webp"><img src="assets/images/steak.jpg" alt="Wagyu beef tenderloin" loading="lazy" decoding="async"></picture></div>
             <div class="menu-item-body">
-              <span class="menu-item-tag" data-i18n="menu.item7.tag">Western</span>
+              <span class="menu-item-tag" data-i18n="menu.item7.tag">Main</span>
               <h3 data-i18n="menu.item7.title">Wagyu Beef Tenderloin</h3>
               <p data-i18n="menu.item7.desc">Australian M9+ wagyu with truffle mash and red wine jus.</p>
             </div>
           </article>
           <article class="menu-item reveal" data-cat="western">
-            <div class="menu-item-image"><img src="assets/images/food-corporate-buffet.jpg" alt="Sea bass"></div>
+            <div class="menu-item-image"><picture><source srcset="assets/images/buffet.webp" type="image/webp"><img src="assets/images/buffet.jpg" alt="Full-service buffet catering" loading="lazy" decoding="async"></picture></div>
             <div class="menu-item-body">
               <span class="menu-item-tag" data-i18n="menu.item8.tag">Western</span>
               <h3 data-i18n="menu.item8.title">Pan-Seared Sea Bass</h3>
@@ -147,7 +148,7 @@
             </div>
           </article>
           <article class="menu-item reveal" data-cat="desserts">
-            <div class="menu-item-image"><img src="assets/images/food-desserts.jpg" alt="Mango pomelo sago"></div>
+            <div class="menu-item-image"><picture><source srcset="assets/images/desserts.webp" type="image/webp"><img src="assets/images/desserts.jpg" alt="Dessert selection" loading="lazy" decoding="async"></picture></div>
             <div class="menu-item-body">
               <span class="menu-item-tag" data-i18n="menu.item9.tag">Dessert</span>
               <h3 data-i18n="menu.item9.title">Mango Pomelo Sago</h3>
@@ -155,7 +156,7 @@
             </div>
           </article>
           <article class="menu-item reveal" data-cat="desserts">
-            <div class="menu-item-image"><img src="assets/images/food-desserts.jpg" alt="Egg tarts"></div>
+            <div class="menu-item-image"><picture><source srcset="assets/images/desserts.webp" type="image/webp"><img src="assets/images/desserts.jpg" alt="Dessert selection" loading="lazy" decoding="async"></picture></div>
             <div class="menu-item-body">
               <span class="menu-item-tag" data-i18n="menu.item10.tag">Dessert</span>
               <h3 data-i18n="menu.item10.title">Egg Tart & Petit Fours</h3>
@@ -163,7 +164,7 @@
             </div>
           </article>
           <article class="menu-item reveal" data-cat="desserts">
-            <div class="menu-item-image"><img src="assets/images/food-desserts.jpg" alt="Fruit platter"></div>
+            <div class="menu-item-image"><picture><source srcset="assets/images/desserts.webp" type="image/webp"><img src="assets/images/desserts.jpg" alt="Dessert selection" loading="lazy" decoding="async"></picture></div>
             <div class="menu-item-body">
               <span class="menu-item-tag" data-i18n="menu.item11.tag">Dessert</span>
               <h3 data-i18n="menu.item11.title">Seasonal Fruit Platter</h3>
@@ -171,7 +172,7 @@
             </div>
           </article>
           <article class="menu-item reveal" data-cat="beverages">
-            <div class="menu-item-image"><img src="assets/images/food-cocktail-canapes.jpg" alt="Gin and tonic bar"></div>
+            <div class="menu-item-image"><picture><source srcset="assets/images/cocktails.webp" type="image/webp"><img src="assets/images/cocktails.jpg" alt="Cocktail and canapé service" loading="lazy" decoding="async"></picture></div>
             <div class="menu-item-body">
               <span class="menu-item-tag" data-i18n="menu.item12.tag">Beverage</span>
               <h3 data-i18n="menu.item12.title">Signature Gin & Tonic Bar</h3>
@@ -179,7 +180,7 @@
             </div>
           </article>
           <article class="menu-item reveal" data-cat="beverages">
-            <div class="menu-item-image"><img src="assets/images/hero-bar.jpg" alt="Champagne selection"></div>
+            <div class="menu-item-image"><picture><source srcset="assets/images/bar.webp" type="image/webp"><img src="assets/images/bar.jpg" alt="Bar service" loading="lazy" decoding="async"></picture></div>
             <div class="menu-item-body">
               <span class="menu-item-tag" data-i18n="menu.item13.tag">Beverage</span>
               <h3 data-i18n="menu.item13.title">Champagne & Sparkling Selection</h3>
@@ -187,7 +188,7 @@
             </div>
           </article>
           <article class="menu-item reveal" data-cat="beverages">
-            <div class="menu-item-image"><img src="assets/images/bar-service.jpg" alt="Mocktail programme"></div>
+            <div class="menu-item-image"><picture><source srcset="assets/images/bar.webp" type="image/webp"><img src="assets/images/bar.jpg" alt="Professional bartender" loading="lazy" decoding="async"></picture></div>
             <div class="menu-item-body">
               <span class="menu-item-tag" data-i18n="menu.item14.tag">Beverage</span>
               <h3 data-i18n="menu.item14.title">Craft Mocktail Programme</h3>
