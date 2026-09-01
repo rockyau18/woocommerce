@@ -16,7 +16,7 @@ const translations = {
     "hero.eyebrow": "Premium Catering · Hong Kong",
     "hero.title": "Exceptional Events, Unforgettable Flavours",
     "hero.lead":
-      "From intimate gatherings to grand galas, we craft bespoke culinary experiences across Hong Kong with world-class service and attention to every detail.",
+      "From rooftop receptions to grand corporate galas — we bring the kitchen, bar, and service team to your venue, creating unforgettable event experiences across Hong Kong.",
     "hero.cta1": "Plan Your Event",
     "hero.cta2": "Explore Services",
     "hero.stat1.num": "500+",
@@ -36,7 +36,7 @@ const translations = {
     "about.eyebrow": "Who We Are",
     "about.title": "Hong Kong's Premier Catering Partner",
     "about.lead":
-      "Based in the heart of Hong Kong, Lumina Catering brings together culinary artistry and flawless execution for events that leave lasting impressions.",
+      "We are a full-service event catering company — not a restaurant. Our chefs, bartenders, and event teams come to your venue with everything needed to host an exceptional occasion.",
     "about.f1.title": "Bespoke Menus",
     "about.f1.desc": "Every menu is tailored to your vision, dietary needs, and cultural preferences.",
     "about.f2.title": "End-to-End Service",
@@ -92,7 +92,7 @@ const translations = {
 
     // Gallery
     "gallery.eyebrow": "Portfolio",
-    "gallery.title": "Moments We've Created",
+    "gallery.title": "Events We've Catered",
 
     // Testimonials
     "testimonials.eyebrow": "Testimonials",
@@ -183,7 +183,7 @@ const translations = {
     "hero.eyebrow": "高端餐飲服務 · 香港",
     "hero.title": "非凡盛宴，難忘滋味",
     "hero.lead":
-      "從私密聚會到盛大晚宴，我們在香港為您打造量身訂製的餐飲體驗，以世界級服務與細緻入微的安排，讓每個場合都令人難忘。",
+      "從天台酒會到盛大企業晚宴——我們將廚房、酒吧及服務團隊帶到您的場地，在香港為您打造難忘的活動體驗。",
     "hero.cta1": "策劃您的活動",
     "hero.cta2": "探索服務",
     "hero.stat1.num": "500+",
@@ -201,7 +201,7 @@ const translations = {
     "about.eyebrow": "關於我們",
     "about.title": "香港頂級餐飲夥伴",
     "about.lead":
-      "立足香港核心，朗宴餐飲將烹飪藝術與完美執行融為一體，為您的活動留下持久印象。",
+      "我們是全方位活動餐飲公司——不是餐廳。廚師、調酒師及活動團隊會帶同所有設備到您的場地，為您舉辦非凡盛宴。",
     "about.f1.title": "專屬定制菜單",
     "about.f1.desc": "每份菜單均根據您的願景、飲食需求及文化偏好量身設計。",
     "about.f2.title": "一站式服務",
@@ -253,7 +253,7 @@ const translations = {
     "process.4.desc": "放鬆享受——我們的團隊為您呈現完美體驗。",
 
     "gallery.eyebrow": "作品集",
-    "gallery.title": "我們創造的精彩時刻",
+    "gallery.title": "我們服務的活動",
 
     "testimonials.eyebrow": "客戶評價",
     "testimonials.title": "他們怎麼說",
