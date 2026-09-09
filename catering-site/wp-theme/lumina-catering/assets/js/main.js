@@ -365,18 +365,48 @@ if (header) {
 // Mobile menu
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileNav = document.querySelector(".mobile-nav");
+
+function closeMobileNav() {
+  if (!mobileNav || !menuToggle) return;
+  mobileNav.classList.remove("open");
+  document.body.classList.remove("nav-open");
+  document.body.style.overflow = "";
+  menuToggle.setAttribute("aria-expanded", "false");
+  mobileNav.setAttribute("hidden", "");
+}
+
+function openMobileNav() {
+  mobileNav.classList.add("open");
+  document.body.classList.add("nav-open");
+  document.body.style.overflow = "hidden";
+  menuToggle.setAttribute("aria-expanded", "true");
+  mobileNav.removeAttribute("hidden");
+}
+
 if (menuToggle && mobileNav) {
   menuToggle.addEventListener("click", () => {
-    mobileNav.classList.toggle("open");
-    document.body.style.overflow = mobileNav.classList.contains("open")
-      ? "hidden"
-      : "";
+    if (mobileNav.classList.contains("open")) {
+      closeMobileNav();
+    } else {
+      openMobileNav();
+    }
   });
+
   mobileNav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      mobileNav.classList.remove("open");
-      document.body.style.overflow = "";
+    link.addEventListener("click", () => closeMobileNav());
+  });
+
+  const parentBtn = mobileNav.querySelector(".mobile-nav-parent");
+  if (parentBtn) {
+    parentBtn.addEventListener("click", () => {
+      const group = parentBtn.closest(".mobile-nav-group");
+      const open = group.classList.toggle("open");
+      parentBtn.setAttribute("aria-expanded", open ? "true" : "false");
     });
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeMobileNav();
   });
 }
 

@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('LUMINA_THEME_VERSION', '1.1.0');
+define('LUMINA_THEME_VERSION', '1.1.1');
 
 require_once get_template_directory() . '/inc/setup.php';
 require_once get_template_directory() . '/inc/services.php';
