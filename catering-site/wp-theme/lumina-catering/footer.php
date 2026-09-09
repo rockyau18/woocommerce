@@ -12,15 +12,19 @@ if (!defined('ABSPATH')) {
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer.services">Services</h4>
-          <a href="<?php echo esc_url(home_url('/#services')); ?>" data-i18n="services.corporate.title">Corporate Events</a>
-          <a href="<?php echo esc_url(home_url('/menu/')); ?>" data-i18n="footer.menu">Our Menu</a>
+          <a href="<?php echo esc_url(home_url('/corporate-events/')); ?>" data-i18n="services.corporate.title">Corporate Events</a>
+          <a href="<?php echo esc_url(home_url('/weddings/')); ?>" data-i18n="services.wedding.title">Weddings</a>
+          <a href="<?php echo esc_url(home_url('/private-celebrations/')); ?>" data-i18n="services.private.title">Private Celebrations</a>
           <a href="<?php echo esc_url(home_url('/bar-service/')); ?>" data-i18n="services.bar.title">Bar & Beverage</a>
+          <a href="<?php echo esc_url(home_url('/full-service/')); ?>" data-i18n="services.full.title">Full-Service Catering</a>
+          <a href="<?php echo esc_url(home_url('/menu/')); ?>" data-i18n="footer.menu">Our Menu</a>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer.company">Company</h4>
           <a href="<?php echo esc_url(home_url('/about/')); ?>" data-i18n="footer.about">About Us</a>
+          <a href="<?php echo esc_url(home_url('/gallery/')); ?>" data-i18n="nav.gallery">Gallery</a>
           <a href="<?php echo esc_url(home_url('/blog/')); ?>" data-i18n="footer.blog">Blog & Cases</a>
-          <a href="<?php echo esc_url(home_url('/#contact')); ?>" data-i18n="nav.contact">Contact</a>
+          <a href="<?php echo esc_url(home_url('/contact/')); ?>" data-i18n="nav.contact">Contact</a>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer.legal">Legal</h4>

@@ -8,14 +8,14 @@ get_header();
 <!-- Page Hero -->
   <section class="page-hero">
     <div class="page-hero-bg">
-      <img src="<?php echo lumina_img('cocktail-reception.jpg'); ?>" alt="Bar service catering Hong Kong">
+      <?php lumina_image('cocktail-reception.jpg', 'Bar service catering Hong Kong', ['eager' => true, 'sizes' => '100vw']); ?>
     </div>
     <div class="container page-hero-content">
       <p class="breadcrumb"><a href="<?php echo esc_url(home_url('/')); ?>" data-i18n="nav.home">Home</a> / <span data-i18n="bar.breadcrumb">Bar Service</span></p>
       <p class="eyebrow" data-i18n="bar.eyebrow">Bar & Beverage</p>
       <h1 data-i18n="bar.title">Time to Raise the Bar</h1>
       <p class="lead" style="color: rgba(255,255,255,0.8); max-width: 60ch;" data-i18n="bar.lead">Fully licensed and insured to serve premium cocktails, wines, and craft beverages at your event. Our mixologists create inventive concoctions that generate buzz in every sense of the word.</p>
-      <a href="<?php echo esc_url(home_url('/#contact')); ?>" class="btn btn-accent" style="margin-top: 2rem;" data-i18n="bar.cta">Start Planning</a>
+      <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn btn-accent" style="margin-top: 2rem;" data-i18n="bar.cta">Start Planning</a>
     </div>
   </section>
 
@@ -35,7 +35,7 @@ get_header();
           </ul>
         </div>
         <div class="content-block-image">
-          <img src="<?php echo lumina_img('bar-service.jpg'); ?>" alt="Mixologist crafting cocktails">
+          <?php lumina_image('bar-service.jpg', 'Mixologist crafting cocktails', ['sizes' => '(max-width: 768px) 100vw, 50vw']); ?>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ get_header();
           <p class="lead" data-i18n="bar.block2.lead">We arrive fully equipped with everything needed to entertain your guests. Whether it's a cash bar, limited bar, or open bar — relax and enjoy the evening knowing our team is serving with a smile.</p>
         </div>
         <div class="content-block-image">
-          <img src="<?php echo lumina_img('full-service.jpg'); ?>" alt="Full bar setup at event">
+          <?php lumina_image('full-service.jpg', 'Full bar setup at event', ['sizes' => '(max-width: 768px) 100vw, 50vw']); ?>
         </div>
       </div>
     </div>
@@ -128,7 +128,7 @@ get_header();
         <p class="eyebrow" style="color: var(--color-accent-light);" data-i18n="bar.cta2.eyebrow">Ready to Start?</p>
         <h2 data-i18n="bar.cta2.title">Let's Create an Unforgettable Bar Experience</h2>
         <p class="lead" style="color: rgba(255,255,255,0.75); margin: 1rem auto 2rem;" data-i18n="bar.cta2.lead">Tell us about your event and we'll craft a bespoke bar package within 24 hours.</p>
-        <a href="<?php echo esc_url(home_url('/#contact')); ?>" class="btn btn-accent" data-i18n="bar.cta">Start Planning</a>
+        <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn btn-accent" data-i18n="bar.cta">Start Planning</a>
       </div>
     </div>
   </section>

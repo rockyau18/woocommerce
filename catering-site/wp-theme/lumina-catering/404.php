@@ -6,7 +6,7 @@ get_header();
 ?>
 <section class="page-hero">
   <div class="page-hero-bg">
-    <img src="<?php echo lumina_img('rooftop-wedding.jpg'); ?>" alt="">
+    <?php lumina_image('rooftop-wedding.jpg', '', ['eager' => true, 'sizes' => '100vw']); ?>
   </div>
   <div class="container page-hero-content">
     <h1><?php esc_html_e('Page not found', 'lumina-catering'); ?></h1>

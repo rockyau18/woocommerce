@@ -7,18 +7,78 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('LUMINA_THEME_VERSION', '1.0.0');
+define('LUMINA_THEME_VERSION', '1.1.0');
 
 require_once get_template_directory() . '/inc/setup.php';
+require_once get_template_directory() . '/inc/services.php';
 
 function lumina_asset($path)
 {
     return get_template_directory_uri() . '/assets/' . ltrim($path, '/');
 }
 
+function lumina_image_sources($file)
+{
+    $base = pathinfo($file, PATHINFO_FILENAME);
+    $dir  = get_template_directory() . '/assets/images';
+    $hits = glob($dir . '/' . $base . '-*.webp') ?: [];
+    $sources = [];
+    foreach ($hits as $abs) {
+        if (preg_match('/-(\d+)\.webp$/', $abs, $m)) {
+            $sources[(int) $m[1]] = lumina_asset('images/' . basename($abs));
+        }
+    }
+    ksort($sources);
+    return $sources;
+}
+
 function lumina_img($file)
 {
+    $sources = lumina_image_sources($file);
+    if ($sources) {
+        return esc_url(end($sources));
+    }
     return esc_url(lumina_asset('images/' . ltrim($file, '/')));
+}
+
+function lumina_image($file, $alt = '', $args = [])
+{
+    $sources = lumina_image_sources($file);
+    $src     = $sources ? end($sources) : lumina_asset('images/' . ltrim($file, '/'));
+    $srcset  = [];
+    foreach ($sources as $width => $url) {
+        $srcset[] = $url . ' ' . $width . 'w';
+    }
+
+    $eager = !empty($args['eager']);
+    $sizes = $args['sizes'] ?? '(max-width: 768px) 100vw, 50vw';
+    $class = $args['class'] ?? '';
+
+    $abs = get_template_directory() . '/assets/images/' . pathinfo($file, PATHINFO_FILENAME) . '-' . (array_key_last($sources) ?: '1600') . '.webp';
+    $dim = is_readable($abs) ? @getimagesize($abs) : false;
+    $width  = $args['width']  ?? ($dim[0] ?? 1536);
+    $height = $args['height'] ?? ($dim[1] ?? 1024);
+
+    $attrs = [
+        'src="' . esc_url($src) . '"',
+        'alt="' . esc_attr($alt) . '"',
+        'width="' . (int) $width . '"',
+        'height="' . (int) $height . '"',
+        'decoding="async"',
+        'loading="' . ($eager ? 'eager' : 'lazy') . '"',
+    ];
+    if ($srcset) {
+        $attrs[] = 'srcset="' . esc_attr(implode(', ', $srcset)) . '"';
+        $attrs[] = 'sizes="' . esc_attr($sizes) . '"';
+    }
+    if ($eager) {
+        $attrs[] = 'fetchpriority="high"';
+    }
+    if ($class) {
+        $attrs[] = 'class="' . esc_attr($class) . '"';
+    }
+
+    echo '<img ' . implode(' ', $attrs) . '>';
 }
 
 function lumina_setup()
@@ -26,12 +86,6 @@ function lumina_setup()
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
     add_theme_support('html5', ['search-form', 'comment-form', 'comment-list', 'gallery', 'caption', 'style', 'script']);
-    add_theme_support('custom-logo', [
-        'height'      => 80,
-        'width'       => 240,
-        'flex-height' => true,
-        'flex-width'  => true,
-    ]);
     register_nav_menus([
         'primary' => __('Primary Menu', 'lumina-catering'),
         'footer'  => __('Footer Menu', 'lumina-catering'),
@@ -43,7 +97,7 @@ function lumina_assets()
 {
     wp_enqueue_style(
         'lumina-fonts',
-        'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&family=Outfit:wght@300;400;500;600&display=swap',
+        'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600&family=Noto+Sans+TC:wght@400;500&family=Noto+Serif+TC:wght@500&family=Outfit:wght@400;500;600&display=swap',
         [],
         null
     );
@@ -62,25 +116,26 @@ function lumina_assets()
         true
     );
 
-    $page_scripts = [];
-    if (is_page_template('templates/page-menu.php') || is_page('menu')) {
-        $page_scripts[] = 'pages';
-    }
-    if (is_page_template('templates/page-about.php') || is_page('about')) {
-        $page_scripts[] = 'pages';
-    }
-    if (is_page_template('templates/page-blog.php') || is_home() || is_page('blog')) {
-        $page_scripts[] = 'pages';
-    }
-    if (is_page_template('templates/page-bar-service.php') || is_page('bar-service')) {
-        $page_scripts[] = 'bar-service';
-    }
+    wp_enqueue_script(
+        'lumina-pages',
+        lumina_asset('js/pages.js'),
+        ['lumina-main'],
+        LUMINA_THEME_VERSION,
+        true
+    );
 
-    $page_scripts = array_unique($page_scripts);
-    foreach ($page_scripts as $handle) {
+    wp_enqueue_script(
+        'lumina-extra',
+        lumina_asset('js/extra-pages.js'),
+        ['lumina-main'],
+        LUMINA_THEME_VERSION,
+        true
+    );
+
+    if (is_page_template('templates/page-bar-service.php') || is_page('bar-service')) {
         wp_enqueue_script(
-            'lumina-' . $handle,
-            lumina_asset('js/' . $handle . '.js'),
+            'lumina-bar-service',
+            lumina_asset('js/bar-service.js'),
             ['lumina-main'],
             LUMINA_THEME_VERSION,
             true
@@ -93,6 +148,49 @@ function lumina_assets()
     ]);
 }
 add_action('wp_enqueue_scripts', 'lumina_assets');
+
+function lumina_font_display($html, $handle)
+{
+    if ($handle !== 'lumina-fonts') {
+        return $html;
+    }
+    $noscript = $html;
+    $html = str_replace("media='all'", "media='print' onload=\"this.media='all'\"", $html);
+    $html = str_replace('media="all"', 'media="print" onload="this.media=\'all\'"', $html);
+    return $html . '<noscript>' . $noscript . '</noscript>';
+}
+add_filter('style_loader_tag', 'lumina_font_display', 10, 2);
+
+function lumina_resource_hints()
+{
+    echo '<link rel="preconnect" href="https://fonts.googleapis.com">' . "\n";
+    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' . "\n";
+
+    $preload = null;
+    if (is_front_page()) {
+        $preload = lumina_img('hero-bar.jpg');
+    } elseif (is_page_template('templates/page-menu.php') || is_page('menu')) {
+        $preload = lumina_img('buffet-station.jpg');
+    } elseif (is_page_template('templates/page-about.php') || is_page('about')) {
+        $preload = lumina_img('full-service.jpg');
+    } elseif (is_page_template('templates/page-blog.php') || is_page('blog')) {
+        $preload = lumina_img('rooftop-wedding.jpg');
+    } elseif (is_page_template('templates/page-gallery.php') || is_page('gallery')) {
+        $preload = lumina_img('rooftop-wedding.jpg');
+    } elseif (is_page_template('templates/page-service.php')) {
+        $cfg = lumina_current_service();
+        if ($cfg) {
+            $preload = lumina_img($cfg['hero']);
+        }
+    } elseif (is_page_template('templates/page-bar-service.php') || is_page('bar-service')) {
+        $preload = lumina_img('cocktail-reception.jpg');
+    }
+
+    if ($preload) {
+        echo '<link rel="preload" as="image" href="' . esc_url($preload) . '" fetchpriority="high">' . "\n";
+    }
+}
+add_action('wp_head', 'lumina_resource_hints', 1);
 
 function lumina_disable_woocommerce_styles()
 {
@@ -110,13 +208,7 @@ function lumina_admin_bar_css()
     if (!is_admin_bar_showing()) {
         return;
     }
-    echo '<style>
-      .admin-bar .site-header { top: 32px; }
-      @media (max-width: 782px) { .admin-bar .site-header { top: 46px; } }
-      .form-notice { margin-top: 1rem; padding: 0.9rem 1rem; border-radius: 8px; font-size: 0.9rem; }
-      .form-notice.success { background: #e8f6ee; color: #1c5c38; }
-      .form-notice.error { background: #fdecea; color: #8a1f11; }
-    </style>';
+    echo '<style>.admin-bar .site-header{top:32px;}@media(max-width:782px){.admin-bar .site-header{top:46px;}}</style>';
 }
 add_action('wp_head', 'lumina_admin_bar_css');
 
@@ -150,10 +242,3 @@ function lumina_inquiry_handler()
 }
 add_action('wp_ajax_lumina_inquiry', 'lumina_inquiry_handler');
 add_action('wp_ajax_nopriv_lumina_inquiry', 'lumina_inquiry_handler');
-
-function lumina_body_classes($classes)
-{
-    $classes[] = 'lumina-theme';
-    return $classes;
-}
-add_filter('body_class', 'lumina_body_classes');

@@ -6,7 +6,7 @@ get_header();
 ?>
 <section class="page-hero">
   <div class="page-hero-bg">
-    <img src="<?php echo lumina_img('hero-bar.jpg'); ?>" alt="">
+    <?php lumina_image('hero-bar.jpg', '', ['eager' => true, 'sizes' => '100vw']); ?>
   </div>
   <div class="container page-hero-content">
     <h1><?php bloginfo('name'); ?></h1>

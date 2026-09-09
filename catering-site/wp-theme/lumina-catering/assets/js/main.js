@@ -458,5 +458,17 @@ const observer = new IntersectionObserver(
 );
 revealEls.forEach((el) => observer.observe(el));
 
+// Menu category tabs
+document.querySelectorAll(".menu-tab").forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const cat = tab.dataset.category;
+    document.querySelectorAll(".menu-tab").forEach((t) => t.classList.remove("active"));
+    tab.classList.add("active");
+    document.querySelectorAll(".menu-item").forEach((item) => {
+      item.style.display = cat === "all" || item.dataset.cat === cat ? "" : "none";
+    });
+  });
+});
+
 // Init
 setLanguage(currentLang);

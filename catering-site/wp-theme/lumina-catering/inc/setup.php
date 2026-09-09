@@ -1,6 +1,6 @@
 <?php
 /**
- * One-time content replacement when Lumina Catering is activated.
+ * Create / update Lumina pages. Safe to run on every deploy.
  */
 if (!defined('ABSPATH')) {
     exit;
@@ -32,13 +32,20 @@ function lumina_create_page($title, $slug, $template, $content = '')
     return (int) $id;
 }
 
-function lumina_replace_site_content()
+function lumina_sync_pages()
 {
     $front_id = lumina_create_page('Home', 'home', '');
-    $menu_id  = lumina_create_page('Menu', 'menu', 'templates/page-menu.php');
-    $about_id = lumina_create_page('About', 'about', 'templates/page-about.php');
-    $blog_id  = lumina_create_page('Blog', 'blog', 'templates/page-blog.php');
+    lumina_create_page('Menu', 'menu', 'templates/page-menu.php');
+    lumina_create_page('About', 'about', 'templates/page-about.php');
+    lumina_create_page('Blog', 'blog', 'templates/page-blog.php');
     lumina_create_page('Bar Service', 'bar-service', 'templates/page-bar-service.php');
+    lumina_create_page('Services', 'services', 'templates/page-services.php');
+    lumina_create_page('Corporate Events', 'corporate-events', 'templates/page-service.php');
+    lumina_create_page('Weddings', 'weddings', 'templates/page-service.php');
+    lumina_create_page('Private Celebrations', 'private-celebrations', 'templates/page-service.php');
+    lumina_create_page('Full-Service Catering', 'full-service', 'templates/page-service.php');
+    lumina_create_page('Gallery', 'gallery', 'templates/page-gallery.php');
+    lumina_create_page('Contact', 'contact', 'templates/page-contact.php');
     lumina_create_page(
         'Privacy Policy',
         'privacy-policy',
@@ -60,7 +67,29 @@ function lumina_replace_site_content()
     update_option('timezone_string', 'Asia/Hong_Kong');
     update_option('permalink_structure', '/%postname%/');
 
-    $keep = ['home', 'menu', 'about', 'blog', 'bar-service', 'privacy-policy', 'terms'];
+    return $front_id;
+}
+
+function lumina_replace_site_content()
+{
+    lumina_sync_pages();
+
+    $keep = [
+        'home',
+        'menu',
+        'about',
+        'blog',
+        'bar-service',
+        'services',
+        'corporate-events',
+        'weddings',
+        'private-celebrations',
+        'full-service',
+        'gallery',
+        'contact',
+        'privacy-policy',
+        'terms',
+    ];
     $pages = get_posts([
         'post_type'      => 'page',
         'post_status'    => 'any',

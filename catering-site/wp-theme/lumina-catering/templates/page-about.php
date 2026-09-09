@@ -7,7 +7,7 @@ get_header();
 ?>
 <section class="page-hero">
     <div class="page-hero-bg">
-      <img src="<?php echo lumina_img('full-service.jpg'); ?>" alt="Lumina Catering event team Hong Kong">
+      <?php lumina_image('full-service.jpg', 'Lumina Catering event team Hong Kong', ['eager' => true, 'sizes' => '100vw']); ?>
     </div>
     <div class="container page-hero-content">
       <p class="breadcrumb"><a href="<?php echo esc_url(home_url('/')); ?>" data-i18n="nav.home">Home</a> / <span data-i18n="aboutpage.breadcrumb">About Us</span></p>
@@ -27,7 +27,7 @@ get_header();
           <p style="margin-top:1rem; color: var(--color-text-muted);" data-i18n="aboutpage.story.p2">We blend the rich culinary heritage of Cantonese cuisine with international techniques and presentation.</p>
         </div>
         <div class="content-block-image">
-          <img src="<?php echo lumina_img('corporate-gala.jpg'); ?>" alt="Hong Kong catering food and harbour view">
+          <?php lumina_image('corporate-gala.jpg', 'Hong Kong catering food and harbour view', ['sizes' => '(max-width: 768px) 100vw, 50vw']); ?>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@ get_header();
       </div>
       <div class="team-grid">
         <div class="team-card reveal">
-          <div class="team-card-image"><img src="<?php echo lumina_img('team-chef.jpg'); ?>" alt="Chef Marcus Lee"></div>
+          <div class="team-card-image"><?php lumina_image('team-chef.jpg', 'Chef Marcus Lee', ['sizes' => '(max-width: 768px) 100vw, 50vw']); ?></div>
           <div class="team-card-body">
             <h3 data-i18n="aboutpage.team1.name">Chef Marcus Lee</h3>
             <p class="team-role" data-i18n="aboutpage.team1.role">Executive Chef</p>
@@ -51,7 +51,7 @@ get_header();
           </div>
         </div>
         <div class="team-card reveal">
-          <div class="team-card-image"><img src="<?php echo lumina_img('team-events.jpg'); ?>" alt="Grace Ho"></div>
+          <div class="team-card-image"><?php lumina_image('team-events.jpg', 'Grace Ho', ['sizes' => '(max-width: 768px) 100vw, 50vw']); ?></div>
           <div class="team-card-body">
             <h3 data-i18n="aboutpage.team2.name">Grace Ho</h3>
             <p class="team-role" data-i18n="aboutpage.team2.role">Event Director</p>
@@ -59,7 +59,7 @@ get_header();
           </div>
         </div>
         <div class="team-card reveal">
-          <div class="team-card-image"><img src="<?php echo lumina_img('team-sommelier.jpg'); ?>" alt="Daniel Chan"></div>
+          <div class="team-card-image"><?php lumina_image('team-sommelier.jpg', 'Daniel Chan', ['sizes' => '(max-width: 768px) 100vw, 50vw']); ?></div>
           <div class="team-card-body">
             <h3 data-i18n="aboutpage.team3.name">Daniel Chan</h3>
             <p class="team-role" data-i18n="aboutpage.team3.role">Head Sommelier</p>
@@ -67,7 +67,7 @@ get_header();
           </div>
         </div>
         <div class="team-card reveal">
-          <div class="team-card-image"><img src="<?php echo lumina_img('team-ops.jpg'); ?>" alt="Amy Wong"></div>
+          <div class="team-card-image"><?php lumina_image('team-ops.jpg', 'Amy Wong', ['sizes' => '(max-width: 768px) 100vw, 50vw']); ?></div>
           <div class="team-card-body">
             <h3 data-i18n="aboutpage.team4.name">Amy Wong</h3>
             <p class="team-role" data-i18n="aboutpage.team4.role">Operations Manager</p>
@@ -109,11 +109,11 @@ get_header();
   <section class="section">
     <div class="container">
       <div class="food-showcase reveal">
-        <div class="food-showcase-item"><img src="<?php echo lumina_img('gourmet-canapes.jpg'); ?>" alt="Dim sum canapés"></div>
-        <div class="food-showcase-item"><img src="<?php echo lumina_img('rooftop-wedding.jpg'); ?>" alt="Wedding banquet"></div>
-        <div class="food-showcase-item"><img src="<?php echo lumina_img('dessert-table.jpg'); ?>" alt="Seafood"></div>
-        <div class="food-showcase-item"><img src="<?php echo lumina_img('cocktail-reception.jpg'); ?>" alt="Desserts"></div>
-        <div class="food-showcase-item"><img src="<?php echo lumina_img('buffet-station.jpg'); ?>" alt="Buffet"></div>
+        <div class="food-showcase-item"><?php lumina_image('gourmet-canapes.jpg', 'Dim sum canapés', ['sizes' => '(max-width: 768px) 100vw, 50vw']); ?></div>
+        <div class="food-showcase-item"><?php lumina_image('rooftop-wedding.jpg', 'Wedding banquet', ['sizes' => '(max-width: 768px) 100vw, 50vw']); ?></div>
+        <div class="food-showcase-item"><?php lumina_image('dessert-table.jpg', 'Seafood', ['sizes' => '(max-width: 768px) 100vw, 50vw']); ?></div>
+        <div class="food-showcase-item"><?php lumina_image('cocktail-reception.jpg', 'Desserts', ['sizes' => '(max-width: 768px) 100vw, 50vw']); ?></div>
+        <div class="food-showcase-item"><?php lumina_image('buffet-station.jpg', 'Buffet', ['sizes' => '(max-width: 768px) 100vw, 50vw']); ?></div>
       </div>
     </div>
   </section>

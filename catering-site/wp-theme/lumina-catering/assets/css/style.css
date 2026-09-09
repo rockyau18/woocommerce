@@ -203,11 +203,11 @@ h3 {
 .nav-desktop {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.35rem;
 }
 
 .nav-desktop a {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 450;
   opacity: 0.85;
   transition: opacity var(--transition);
@@ -215,6 +215,59 @@ h3 {
 
 .nav-desktop a:hover {
   opacity: 1;
+}
+
+.nav-item.has-sub {
+  position: relative;
+}
+
+.nav-item.has-sub > a::after {
+  content: "▾";
+  font-size: 0.65em;
+  margin-left: 0.3rem;
+  opacity: 0.7;
+}
+
+.nav-sub {
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  min-width: 240px;
+  background: #fff;
+  color: var(--color-text);
+  padding: 0.65rem 0;
+  border-radius: 14px;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: var(--transition);
+  z-index: 20;
+}
+
+.nav-item.has-sub:hover .nav-sub,
+.nav-item.has-sub:focus-within .nav-sub {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.nav-sub a {
+  display: block;
+  padding: 0.55rem 1.1rem;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+.nav-sub a:hover {
+  background: var(--color-bg);
+  opacity: 1;
+}
+
+img[loading="lazy"] {
+  content-visibility: auto;
 }
 
 .header-actions {
