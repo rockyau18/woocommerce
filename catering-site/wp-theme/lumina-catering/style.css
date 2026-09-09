@@ -1,0 +1,13 @@
+/*
+Theme Name: Lumina Catering
+Theme URI: https://yaul12.sg-host.com
+Author: Lumina Catering HK
+Description: Premium bilingual (EN / 繁體中文) catering theme for Hong Kong events, converted from the Lumina HTML prototype.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.8
+Requires PHP: 8.0
+Text Domain: lumina-catering
+*/
+
+/* Front-end styles live in assets/css/style.css and are enqueued from functions.php. */
