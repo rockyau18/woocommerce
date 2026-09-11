@@ -1,0 +1,866 @@
+{
+  "candidates": [
+    {
+      "id": "hk-hero-01",
+      "path": "01-hero/hk-hero-01__office-harbour-cocktail.jpg",
+      "src": "01-hero/hk-hero-01__office-harbour-cocktail.jpg",
+      "zh": "office harbour cocktail",
+      "en": "office harbour cocktail",
+      "folder": "01-hero",
+      "folderLabel": "Hero",
+      "new": false
+    },
+    {
+      "id": "hk-hero-02",
+      "path": "01-hero/hk-hero-02__hotel-ballroom-event.jpg",
+      "src": "01-hero/hk-hero-02__hotel-ballroom-event.jpg",
+      "zh": "hotel ballroom event",
+      "en": "hotel ballroom event",
+      "folder": "01-hero",
+      "folderLabel": "Hero",
+      "new": false
+    },
+    {
+      "id": "hk-v3-01",
+      "path": "01-hero/hk-v3-01__office-lobby-cocktail.jpg",
+      "src": "01-hero/hk-v3-01__office-lobby-cocktail.jpg",
+      "zh": "辦公室大堂酒會",
+      "en": "Office lobby cocktail",
+      "folder": "01-hero",
+      "folderLabel": "Hero",
+      "new": true
+    },
+    {
+      "id": "hk-corp-01",
+      "path": "02-corporate/hk-corp-01__magenta-ballroom-gala.jpg",
+      "src": "02-corporate/hk-corp-01__magenta-ballroom-gala.jpg",
+      "zh": "magenta ballroom gala",
+      "en": "magenta ballroom gala",
+      "folder": "02-corporate",
+      "folderLabel": "Corporate",
+      "new": false
+    },
+    {
+      "id": "hk-corp-02",
+      "path": "02-corporate/hk-corp-02__product-launch-reception.jpg",
+      "src": "02-corporate/hk-corp-02__product-launch-reception.jpg",
+      "zh": "product launch reception",
+      "en": "product launch reception",
+      "folder": "02-corporate",
+      "folderLabel": "Corporate",
+      "new": false
+    },
+    {
+      "id": "hk-corp-03",
+      "path": "02-corporate/hk-corp-03__roast-pig-opening.jpg",
+      "src": "02-corporate/hk-corp-03__roast-pig-opening.jpg",
+      "zh": "roast pig opening",
+      "en": "roast pig opening",
+      "folder": "02-corporate",
+      "folderLabel": "Corporate",
+      "new": false
+    },
+    {
+      "id": "hk-corp-04",
+      "path": "02-corporate/hk-corp-04__office-lunch-catering.jpg",
+      "src": "02-corporate/hk-corp-04__office-lunch-catering.jpg",
+      "zh": "office lunch catering",
+      "en": "office lunch catering",
+      "folder": "02-corporate",
+      "folderLabel": "Corporate",
+      "new": false
+    },
+    {
+      "id": "hk-v3-02",
+      "path": "02-corporate/hk-v3-02__ballroom-gala-guests.jpg",
+      "src": "02-corporate/hk-v3-02__ballroom-gala-guests.jpg",
+      "zh": "宴會廳企業晚宴（有賓客）",
+      "en": "Ballroom gala with guests",
+      "folder": "02-corporate",
+      "folderLabel": "Corporate",
+      "new": true
+    },
+    {
+      "id": "hk-v3-03",
+      "path": "02-corporate/hk-v3-03__launch-foyer.jpg",
+      "src": "02-corporate/hk-v3-03__launch-foyer.jpg",
+      "zh": "產品發佈會大堂",
+      "en": "Product launch foyer",
+      "folder": "02-corporate",
+      "folderLabel": "Corporate",
+      "new": true
+    },
+    {
+      "id": "hk-v3-04",
+      "path": "02-corporate/hk-v3-04__boardroom-lunch.jpg",
+      "src": "02-corporate/hk-v3-04__boardroom-lunch.jpg",
+      "zh": "會議室公司 Lunch",
+      "en": "Boardroom lunch catering",
+      "folder": "02-corporate",
+      "folderLabel": "Corporate",
+      "new": true
+    },
+    {
+      "id": "hk-v3-15",
+      "path": "02-corporate/hk-v3-15__opening-roast-pig.jpg",
+      "src": "02-corporate/hk-v3-15__opening-roast-pig.jpg",
+      "zh": "開幕燒豬",
+      "en": "Opening roast pig",
+      "folder": "02-corporate",
+      "folderLabel": "Corporate",
+      "new": true
+    },
+    {
+      "id": "hk-v3-23",
+      "path": "02-corporate/hk-v3-23__chinese-buffet-office.jpg",
+      "src": "02-corporate/hk-v3-23__chinese-buffet-office.jpg",
+      "zh": "中式公司自助",
+      "en": "Chinese office buffet",
+      "folder": "02-corporate",
+      "folderLabel": "Corporate",
+      "new": true
+    },
+    {
+      "id": "hk-v3-28",
+      "path": "02-corporate/hk-v3-28__executive-sitdown.jpg",
+      "src": "02-corporate/hk-v3-28__executive-sitdown.jpg",
+      "zh": "行政位上晚宴",
+      "en": "Executive sit-down",
+      "folder": "02-corporate",
+      "folderLabel": "Corporate",
+      "new": true
+    },
+    {
+      "id": "hk-v3-05",
+      "path": "03-wedding/hk-v3-05__wedding-banquet-hall.jpg",
+      "src": "03-wedding/hk-v3-05__wedding-banquet-hall.jpg",
+      "zh": "酒店圓桌婚宴",
+      "en": "Hotel wedding banquet",
+      "folder": "03-wedding",
+      "folderLabel": "Wedding",
+      "new": true
+    },
+    {
+      "id": "hk-v3-06",
+      "path": "03-wedding/hk-v3-06__rooftop-wedding-cocktail.jpg",
+      "src": "03-wedding/hk-v3-06__rooftop-wedding-cocktail.jpg",
+      "zh": "天台婚禮 cocktail",
+      "en": "Rooftop wedding cocktail",
+      "folder": "03-wedding",
+      "folderLabel": "Wedding",
+      "new": true
+    },
+    {
+      "id": "hk-v3-24",
+      "path": "03-wedding/hk-v3-24__wedding-cocktail-display.jpg",
+      "src": "03-wedding/hk-v3-24__wedding-cocktail-display.jpg",
+      "zh": "婚禮 cocktail 擺盤",
+      "en": "Wedding cocktail display",
+      "folder": "03-wedding",
+      "folderLabel": "Wedding",
+      "new": true
+    },
+    {
+      "id": "hk-wed-01",
+      "path": "03-wedding/hk-wed-01__hotel-roundtable-banquet.jpg",
+      "src": "03-wedding/hk-wed-01__hotel-roundtable-banquet.jpg",
+      "zh": "hotel roundtable banquet",
+      "en": "hotel roundtable banquet",
+      "folder": "03-wedding",
+      "folderLabel": "Wedding",
+      "new": false
+    },
+    {
+      "id": "hk-wed-02",
+      "path": "03-wedding/hk-wed-02__harbour-wedding-cocktail.jpg",
+      "src": "03-wedding/hk-wed-02__harbour-wedding-cocktail.jpg",
+      "zh": "harbour wedding cocktail",
+      "en": "harbour wedding cocktail",
+      "folder": "03-wedding",
+      "folderLabel": "Wedding",
+      "new": false
+    },
+    {
+      "id": "hk-priv-01",
+      "path": "04-private/hk-priv-01__clubhouse-buffet-party.jpg",
+      "src": "04-private/hk-priv-01__clubhouse-buffet-party.jpg",
+      "zh": "clubhouse buffet party",
+      "en": "clubhouse buffet party",
+      "folder": "04-private",
+      "folderLabel": "Private",
+      "new": false
+    },
+    {
+      "id": "hk-v3-07",
+      "path": "04-private/hk-v3-07__clubhouse-private.jpg",
+      "src": "04-private/hk-v3-07__clubhouse-private.jpg",
+      "zh": "會所私人派對",
+      "en": "Clubhouse private party",
+      "folder": "04-private",
+      "folderLabel": "Private",
+      "new": true
+    },
+    {
+      "id": "hk-v3-08",
+      "path": "04-private/hk-v3-08__garden-terrace-dinner.jpg",
+      "src": "04-private/hk-v3-08__garden-terrace-dinner.jpg",
+      "zh": "花園露台晚宴",
+      "en": "Garden terrace dinner",
+      "folder": "04-private",
+      "folderLabel": "Private",
+      "new": true
+    },
+    {
+      "id": "hk-bar-01",
+      "path": "05-bar/hk-bar-01__harbour-rooftop-bar.jpg",
+      "src": "05-bar/hk-bar-01__harbour-rooftop-bar.jpg",
+      "zh": "harbour rooftop bar",
+      "en": "harbour rooftop bar",
+      "folder": "05-bar",
+      "folderLabel": "Bar",
+      "new": false
+    },
+    {
+      "id": "hk-v3-09",
+      "path": "05-bar/hk-v3-09__harbour-rooftop-bar.jpg",
+      "src": "05-bar/hk-v3-09__harbour-rooftop-bar.jpg",
+      "zh": "維港天台酒吧",
+      "en": "Harbour rooftop bar",
+      "folder": "05-bar",
+      "folderLabel": "Bar",
+      "new": true
+    },
+    {
+      "id": "hk-v3-10",
+      "path": "05-bar/hk-v3-10__champagne-reception.jpg",
+      "src": "05-bar/hk-v3-10__champagne-reception.jpg",
+      "zh": "香檳接待",
+      "en": "Champagne reception",
+      "folder": "05-bar",
+      "folderLabel": "Bar",
+      "new": true
+    },
+    {
+      "id": "hk-food-01",
+      "path": "06-food-stations/hk-food-01__seafood-tower.jpg",
+      "src": "06-food-stations/hk-food-01__seafood-tower.jpg",
+      "zh": "seafood tower",
+      "en": "seafood tower",
+      "folder": "06-food-stations",
+      "folderLabel": "Food",
+      "new": false
+    },
+    {
+      "id": "hk-food-02",
+      "path": "06-food-stations/hk-food-02__canape-butler-service.jpg",
+      "src": "06-food-stations/hk-food-02__canape-butler-service.jpg",
+      "zh": "canape butler service",
+      "en": "canape butler service",
+      "folder": "06-food-stations",
+      "folderLabel": "Food",
+      "new": false
+    },
+    {
+      "id": "hk-food-03",
+      "path": "06-food-stations/hk-food-03__hk-dessert-station.jpg",
+      "src": "06-food-stations/hk-food-03__hk-dessert-station.jpg",
+      "zh": "hk dessert station",
+      "en": "hk dessert station",
+      "folder": "06-food-stations",
+      "folderLabel": "Food",
+      "new": false
+    },
+    {
+      "id": "hk-v3-11",
+      "path": "06-food-stations/hk-v3-11__seafood-tower-event.jpg",
+      "src": "06-food-stations/hk-v3-11__seafood-tower-event.jpg",
+      "zh": "活動現場海鮮塔",
+      "en": "Seafood tower at event",
+      "folder": "06-food-stations",
+      "folderLabel": "Food",
+      "new": true
+    },
+    {
+      "id": "hk-v3-12",
+      "path": "06-food-stations/hk-v3-12__gallery-passaround.jpg",
+      "src": "06-food-stations/hk-v3-12__gallery-passaround.jpg",
+      "zh": "畫廊傳菜 pass-around",
+      "en": "Gallery pass-around",
+      "folder": "06-food-stations",
+      "folderLabel": "Food",
+      "new": true
+    },
+    {
+      "id": "hk-v3-18",
+      "path": "06-food-stations/hk-v3-18__dessert-station.jpg",
+      "src": "06-food-stations/hk-v3-18__dessert-station.jpg",
+      "zh": "甜品站",
+      "en": "Dessert station",
+      "folder": "06-food-stations",
+      "folderLabel": "Food",
+      "new": true
+    },
+    {
+      "id": "hk-full-01",
+      "path": "07-full-service/hk-full-01__live-cooking-stations.jpg",
+      "src": "07-full-service/hk-full-01__live-cooking-stations.jpg",
+      "zh": "live cooking stations",
+      "en": "live cooking stations",
+      "folder": "07-full-service",
+      "folderLabel": "Full service",
+      "new": false
+    },
+    {
+      "id": "hk-full-02",
+      "path": "07-full-service/hk-full-02__charity-gala-dinner.jpg",
+      "src": "07-full-service/hk-full-02__charity-gala-dinner.jpg",
+      "zh": "charity gala dinner",
+      "en": "charity gala dinner",
+      "folder": "07-full-service",
+      "folderLabel": "Full service",
+      "new": false
+    },
+    {
+      "id": "hk-v3-13",
+      "path": "07-full-service/hk-v3-13__live-stations.jpg",
+      "src": "07-full-service/hk-v3-13__live-stations.jpg",
+      "zh": "Live stations 全服務",
+      "en": "Live cooking stations",
+      "folder": "07-full-service",
+      "folderLabel": "Full service",
+      "new": true
+    },
+    {
+      "id": "hk-v3-14",
+      "path": "07-full-service/hk-v3-14__charity-gala-wide.jpg",
+      "src": "07-full-service/hk-v3-14__charity-gala-wide.jpg",
+      "zh": "慈善晚宴全景",
+      "en": "Charity gala wide",
+      "folder": "07-full-service",
+      "folderLabel": "Full service",
+      "new": true
+    },
+    {
+      "id": "hk-v3-22",
+      "path": "07-full-service/hk-v3-22__western-buffet-line.jpg",
+      "src": "07-full-service/hk-v3-22__western-buffet-line.jpg",
+      "zh": "西式自助長桌",
+      "en": "Western buffet line",
+      "folder": "07-full-service",
+      "folderLabel": "Full service",
+      "new": true
+    },
+    {
+      "id": "hk-ff-01",
+      "path": "08-finger-food/hk-ff-01__tiered-salmon-canapes.jpg",
+      "src": "08-finger-food/hk-ff-01__tiered-salmon-canapes.jpg",
+      "zh": "tiered salmon canapes",
+      "en": "tiered salmon canapes",
+      "folder": "08-finger-food",
+      "folderLabel": "Finger food",
+      "new": true
+    },
+    {
+      "id": "hk-ff-02",
+      "path": "08-finger-food/hk-ff-02__three-tier-stand.jpg",
+      "src": "08-finger-food/hk-ff-02__three-tier-stand.jpg",
+      "zh": "three tier stand",
+      "en": "three tier stand",
+      "folder": "08-finger-food",
+      "folderLabel": "Finger food",
+      "new": true
+    },
+    {
+      "id": "hk-ff-03",
+      "path": "08-finger-food/hk-ff-03__pass-around-tray.jpg",
+      "src": "08-finger-food/hk-ff-03__pass-around-tray.jpg",
+      "zh": "pass around tray",
+      "en": "pass around tray",
+      "folder": "08-finger-food",
+      "folderLabel": "Finger food",
+      "new": true
+    },
+    {
+      "id": "hk-ff-04",
+      "path": "08-finger-food/hk-ff-04__platter-closeup.jpg",
+      "src": "08-finger-food/hk-ff-04__platter-closeup.jpg",
+      "zh": "platter closeup",
+      "en": "platter closeup",
+      "folder": "08-finger-food",
+      "folderLabel": "Finger food",
+      "new": true
+    },
+    {
+      "id": "hk-ff-05",
+      "path": "08-finger-food/hk-ff-05__dessert-tier.jpg",
+      "src": "08-finger-food/hk-ff-05__dessert-tier.jpg",
+      "zh": "dessert tier",
+      "en": "dessert tier",
+      "folder": "08-finger-food",
+      "folderLabel": "Finger food",
+      "new": true
+    },
+    {
+      "id": "hk-ff-06",
+      "path": "08-finger-food/hk-ff-06__canape-box-stand.jpg",
+      "src": "08-finger-food/hk-ff-06__canape-box-stand.jpg",
+      "zh": "canape box stand",
+      "en": "canape box stand",
+      "folder": "08-finger-food",
+      "folderLabel": "Finger food",
+      "new": true
+    },
+    {
+      "id": "hk-ff-07",
+      "path": "08-finger-food/hk-ff-07__asian-fusion-tiers.jpg",
+      "src": "08-finger-food/hk-ff-07__asian-fusion-tiers.jpg",
+      "zh": "asian fusion tiers",
+      "en": "asian fusion tiers",
+      "folder": "08-finger-food",
+      "folderLabel": "Finger food",
+      "new": true
+    },
+    {
+      "id": "hk-ff-08",
+      "path": "08-finger-food/hk-ff-08__cocktail-table-display.jpg",
+      "src": "08-finger-food/hk-ff-08__cocktail-table-display.jpg",
+      "zh": "cocktail table display",
+      "en": "cocktail table display",
+      "folder": "08-finger-food",
+      "folderLabel": "Finger food",
+      "new": true
+    },
+    {
+      "id": "hk-ff-09",
+      "path": "08-finger-food/hk-ff-09__hot-finger-station.jpg",
+      "src": "08-finger-food/hk-ff-09__hot-finger-station.jpg",
+      "zh": "hot finger station",
+      "en": "hot finger station",
+      "folder": "08-finger-food",
+      "folderLabel": "Finger food",
+      "new": true
+    },
+    {
+      "id": "hk-ff-10",
+      "path": "08-finger-food/hk-ff-10__buffet-finger-station.jpg",
+      "src": "08-finger-food/hk-ff-10__buffet-finger-station.jpg",
+      "zh": "buffet finger station",
+      "en": "buffet finger station",
+      "folder": "08-finger-food",
+      "folderLabel": "Finger food",
+      "new": true
+    },
+    {
+      "id": "hk-v3-17",
+      "path": "08-finger-food/hk-v3-17__tier-stand-close.jpg",
+      "src": "08-finger-food/hk-v3-17__tier-stand-close.jpg",
+      "zh": "層架近拍",
+      "en": "Tier stand close-up",
+      "folder": "08-finger-food",
+      "folderLabel": "Finger food",
+      "new": true
+    },
+    {
+      "id": "hk-v3-19",
+      "path": "08-finger-food/hk-v3-19__hot-finger-platter.jpg",
+      "src": "08-finger-food/hk-v3-19__hot-finger-platter.jpg",
+      "zh": "熱 finger food 盤",
+      "en": "Hot finger platter",
+      "folder": "08-finger-food",
+      "folderLabel": "Finger food",
+      "new": true
+    },
+    {
+      "id": "hk-v3-20",
+      "path": "08-finger-food/hk-v3-20__chef-plating-tiers.jpg",
+      "src": "08-finger-food/hk-v3-20__chef-plating-tiers.jpg",
+      "zh": "主廚層架擺盤",
+      "en": "Chef plating tiers",
+      "folder": "08-finger-food",
+      "folderLabel": "Finger food",
+      "new": true
+    },
+    {
+      "id": "hk-v3-21",
+      "path": "08-finger-food/hk-v3-21__asian-canape-tiers.jpg",
+      "src": "08-finger-food/hk-v3-21__asian-canape-tiers.jpg",
+      "zh": "中西融合層架",
+      "en": "Asian fusion canapé tiers",
+      "folder": "08-finger-food",
+      "folderLabel": "Finger food",
+      "new": true
+    },
+    {
+      "id": "hk-v3-30",
+      "path": "08-finger-food/hk-v3-30__general-tier-display.jpg",
+      "src": "08-finger-food/hk-v3-30__general-tier-display.jpg",
+      "zh": "通用層架擺設",
+      "en": "General tier display",
+      "folder": "08-finger-food",
+      "folderLabel": "Finger food",
+      "new": true
+    },
+    {
+      "id": "hk-v3-16",
+      "path": "09-varied-scenes/hk-v3-16__junk-boat-party.jpg",
+      "src": "09-varied-scenes/hk-v3-16__junk-boat-party.jpg",
+      "zh": "船河派對到會",
+      "en": "Junk boat party",
+      "folder": "09-varied-scenes",
+      "folderLabel": "Varied scenes",
+      "new": true
+    },
+    {
+      "id": "hk-v3-25",
+      "path": "09-varied-scenes/hk-v3-25__tram-party-catering.jpg",
+      "src": "09-varied-scenes/hk-v3-25__tram-party-catering.jpg",
+      "zh": "電車／特色場地派對",
+      "en": "Tram/heritage party",
+      "folder": "09-varied-scenes",
+      "folderLabel": "Varied scenes",
+      "new": true
+    },
+    {
+      "id": "hk-v3-26",
+      "path": "09-varied-scenes/hk-v3-26__museum-cocktail.jpg",
+      "src": "09-varied-scenes/hk-v3-26__museum-cocktail.jpg",
+      "zh": "博物館／文化中心酒會",
+      "en": "Museum cocktail",
+      "folder": "09-varied-scenes",
+      "folderLabel": "Varied scenes",
+      "new": true
+    },
+    {
+      "id": "hk-v3-27",
+      "path": "09-varied-scenes/hk-v3-27__poolside-reception.jpg",
+      "src": "09-varied-scenes/hk-v3-27__poolside-reception.jpg",
+      "zh": "泳池畔接待",
+      "en": "Poolside reception",
+      "folder": "09-varied-scenes",
+      "folderLabel": "Varied scenes",
+      "new": true
+    },
+    {
+      "id": "hk-v3-29",
+      "path": "09-varied-scenes/hk-v3-29__tea-break-canapes.jpg",
+      "src": "09-varied-scenes/hk-v3-29__tea-break-canapes.jpg",
+      "zh": "會議茶歇小食",
+      "en": "Tea break canapés",
+      "folder": "09-varied-scenes",
+      "folderLabel": "Varied scenes",
+      "new": true
+    }
+  ],
+  "site": [
+    {
+      "id": "bar-service",
+      "path": "lumina-catering/assets/images/bar-service-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/bar-service-800.webp",
+      "zh": "酒吧服務",
+      "en": "Bar service",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "front-page.php",
+        "templates/page-bar-service.php",
+        "templates/page-menu.php",
+        "templates/page-services.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "buffet-station",
+      "path": "lumina-catering/assets/images/buffet-station-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/buffet-station-800.webp",
+      "zh": "自助站",
+      "en": "Buffet station",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "front-page.php",
+        "inc/services.php",
+        "templates/page-about.php",
+        "templates/page-blog.php",
+        "templates/page-gallery.php",
+        "templates/page-menu.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "charity-gala",
+      "path": "lumina-catering/assets/images/charity-gala-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/charity-gala-800.webp",
+      "zh": "慈善晚宴",
+      "en": "Charity gala",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "front-page.php",
+        "inc/services.php",
+        "templates/page-blog.php",
+        "templates/page-gallery.php",
+        "templates/page-menu.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "cocktail-reception",
+      "path": "lumina-catering/assets/images/cocktail-reception-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/cocktail-reception-800.webp",
+      "zh": "雞尾酒會",
+      "en": "Cocktail reception",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "front-page.php",
+        "templates/page-about.php",
+        "templates/page-bar-service.php",
+        "templates/page-blog.php",
+        "templates/page-gallery.php",
+        "templates/page-menu.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "corporate-catering",
+      "path": "lumina-catering/assets/images/corporate-catering-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/corporate-catering-800.webp",
+      "zh": "企業到會",
+      "en": "Corporate catering",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "inc/services.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "corporate-gala",
+      "path": "lumina-catering/assets/images/corporate-gala-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/corporate-gala-800.webp",
+      "zh": "企業晚宴",
+      "en": "Corporate gala",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "front-page.php",
+        "inc/services.php",
+        "templates/page-about.php",
+        "templates/page-blog.php",
+        "templates/page-menu.php",
+        "templates/page-services.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "dessert-table",
+      "path": "lumina-catering/assets/images/dessert-table-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/dessert-table-800.webp",
+      "zh": "甜品台",
+      "en": "Dessert table",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "front-page.php",
+        "inc/services.php",
+        "templates/page-about.php",
+        "templates/page-blog.php",
+        "templates/page-gallery.php",
+        "templates/page-menu.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "full-service",
+      "path": "lumina-catering/assets/images/full-service-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/full-service-800.webp",
+      "zh": "全服務",
+      "en": "Full service",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "front-page.php",
+        "inc/services.php",
+        "page.php",
+        "templates/page-about.php",
+        "templates/page-bar-service.php",
+        "templates/page-blog.php",
+        "templates/page-menu.php",
+        "templates/page-services.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "garden-party",
+      "path": "lumina-catering/assets/images/garden-party-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/garden-party-800.webp",
+      "zh": "私人慶祝／花園",
+      "en": "Garden / private",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "front-page.php",
+        "inc/services.php",
+        "templates/page-blog.php",
+        "templates/page-gallery.php",
+        "templates/page-menu.php",
+        "templates/page-services.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "gourmet-canapes",
+      "path": "lumina-catering/assets/images/gourmet-canapes-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/gourmet-canapes-800.webp",
+      "zh": "精緻小食",
+      "en": "Gourmet canapés",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "front-page.php",
+        "inc/services.php",
+        "templates/page-about.php",
+        "templates/page-blog.php",
+        "templates/page-gallery.php",
+        "templates/page-menu.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "hero-bar",
+      "path": "lumina-catering/assets/images/hero-bar-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/hero-bar-800.webp",
+      "zh": "首頁 Hero",
+      "en": "Homepage hero",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "front-page.php",
+        "index.php",
+        "templates/page-contact.php",
+        "templates/page-menu.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "private-events",
+      "path": "lumina-catering/assets/images/private-events-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/private-events-800.webp",
+      "zh": "私人活動",
+      "en": "Private events",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "inc/services.php",
+        "templates/page-blog.php",
+        "templates/page-gallery.php",
+        "templates/page-menu.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "product-launch",
+      "path": "lumina-catering/assets/images/product-launch-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/product-launch-800.webp",
+      "zh": "產品發佈",
+      "en": "Product launch",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "inc/services.php",
+        "templates/page-blog.php",
+        "templates/page-gallery.php",
+        "templates/page-menu.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "rooftop-wedding",
+      "path": "lumina-catering/assets/images/rooftop-wedding-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/rooftop-wedding-800.webp",
+      "zh": "天台婚禮",
+      "en": "Rooftop wedding",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "404.php",
+        "front-page.php",
+        "inc/services.php",
+        "templates/page-about.php",
+        "templates/page-blog.php",
+        "templates/page-gallery.php",
+        "templates/page-menu.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "team-chef",
+      "path": "lumina-catering/assets/images/team-chef-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/team-chef-800.webp",
+      "zh": "團隊・主廚",
+      "en": "Team chef",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "templates/page-about.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "team-events",
+      "path": "lumina-catering/assets/images/team-events-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/team-events-800.webp",
+      "zh": "團隊・活動",
+      "en": "Team events",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "templates/page-about.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "team-ops",
+      "path": "lumina-catering/assets/images/team-ops-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/team-ops-800.webp",
+      "zh": "團隊・營運",
+      "en": "Team ops",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "templates/page-about.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "team-sommelier",
+      "path": "lumina-catering/assets/images/team-sommelier-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/team-sommelier-800.webp",
+      "zh": "團隊・侍酒",
+      "en": "Team sommelier",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "templates/page-about.php"
+      ],
+      "new": false
+    },
+    {
+      "id": "wedding-catering",
+      "path": "lumina-catering/assets/images/wedding-catering-800.webp",
+      "src": "../wp-theme/lumina-catering/assets/images/wedding-catering-800.webp",
+      "zh": "婚禮到會",
+      "en": "Wedding catering",
+      "folder": "site",
+      "folderLabel": "網站現用",
+      "uses": [
+        "front-page.php",
+        "inc/services.php",
+        "templates/page-gallery.php",
+        "templates/page-menu.php",
+        "templates/page-services.php"
+      ],
+      "new": false
+    }
+  ]
+}
