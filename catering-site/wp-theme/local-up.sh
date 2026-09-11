@@ -37,7 +37,8 @@ done
 
 echo "Waiting for database..."
 for i in $(seq 1 60); do
-  if wpcli wp db check >/dev/null 2>&1; then
+  # Prefer compose healthcheck; wp db check can fail on MySQL 8 self-signed TLS.
+  if docker compose exec -T db mysqladmin ping -h 127.0.0.1 -uwordpress -pwordpress --silent >/dev/null 2>&1; then
     break
   fi
   if (( i == 60 )); then

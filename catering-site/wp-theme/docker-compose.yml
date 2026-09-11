@@ -46,6 +46,7 @@ services:
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
+      WP_CLI_ALLOW_ROOT: "1"
     volumes:
       - ./wp-local-data:/var/www/html
       - ./lumina-catering:/var/www/html/wp-content/themes/lumina-catering

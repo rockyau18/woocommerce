@@ -1,0 +1,10 @@
+# Photo review secrets / generated artifacts
+photo-review/config.php
+photo-review/generated/
+
+# Local-only photo archives (optional large dumps)
+photo-library/_archive*/
+photo-library/_archive-western-v1/
+
+# OS junk
+.DS_Store

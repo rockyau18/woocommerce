@@ -27,4 +27,11 @@ ssh "${SSH_OPTS[@]}" "${USER}@${HOST}" "cd '$REMOTE' && \
   echo THEME=\$(\$WP option get stylesheet) && \
   echo PAGES=\$(\$WP post list --post_type=page --field=post_name --format=csv)"
 
+# Also refresh the shared photo-review site (candidates + marks UI)
+if [[ -f "$(dirname "$0")/deploy-photo-review.sh" ]]; then
+  echo "Updating online photo-review..."
+  bash "$(dirname "$0")/deploy-photo-review.sh"
+fi
+
 echo "Deploy complete. Visit https://yaul12.sg-host.com"
+echo "Photo review: https://yaul12.sg-host.com/photo-review/"
